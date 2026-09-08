@@ -1,0 +1,1417 @@
+{
+  "schema_version": "1.0",
+  "status": "consolidated_specification_pending_approval",
+  "standards": [
+    {
+      "id": "STDREG-001",
+      "title": "RBI IT governance",
+      "version_pin": "2023 directions; amendments must be refreshed",
+      "obligation_type": "law/regulation",
+      "applicability_trigger": "India; in-scope regulated entity or contractual flow-down",
+      "applicable_packages": [
+        "G03",
+        "G04",
+        "G05",
+        "S01",
+        "R01",
+        "O02"
+      ],
+      "source_url": "https://systemhealth.rbi.org.in/Scripts/BS_ViewMasDirections.aspx_id%3D12562%283%29.html",
+      "source_status": "official_page_verified_amendments_pending",
+      "required_evidence": "Governance, change, risk, continuity, audit; entity-specific clause extraction required",
+      "policy_ids": [
+        "POL-004",
+        "POL-015",
+        "POL-022",
+        "POL-023",
+        "POL-038"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Legal and Compliance Officer",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-002",
+      "title": "RBI IT outsourcing",
+      "version_pin": "2023 direction; current consolidated text pending",
+      "obligation_type": "law/regulation",
+      "applicability_trigger": "India; regulated customer outsourcing IT services",
+      "applicable_packages": [
+        "G04",
+        "G06",
+        "S01",
+        "C02",
+        "C04"
+      ],
+      "source_url": "https://systemhealth.rbi.org.in/Scripts/BS_ViewMasterDirections.aspx.html",
+      "source_status": "official_index_verified_full_text_pending",
+      "required_evidence": "Outsourcing due diligence, contracts, access/audit, exit and subcontractors",
+      "policy_ids": [
+        "POL-004",
+        "POL-008",
+        "POL-031",
+        "POL-037"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Legal and Compliance Officer",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-003",
+      "title": "RBI payment security and payment-data storage",
+      "version_pin": "Exact circulars and amendments pending",
+      "obligation_type": "law/regulation",
+      "applicability_trigger": "India; payment operator/participant, service and data scope",
+      "applicable_packages": [
+        "B02",
+        "B10",
+        "S01",
+        "R06",
+        "T06"
+      ],
+      "source_url": "https://www.rbi.org.in/",
+      "source_status": "source_acquisition_pending",
+      "required_evidence": "Resolve digital-payment security, cyber resilience and storage location obligations per actor",
+      "policy_ids": [
+        "POL-004",
+        "POL-006",
+        "POL-007",
+        "POL-024"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Legal and Compliance Officer",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-004",
+      "title": "RBI KYC and fraud directions",
+      "version_pin": "Current consolidated editions pending",
+      "obligation_type": "law/regulation",
+      "applicability_trigger": "India; regulated customer KYC/fraud processing",
+      "applicable_packages": [
+        "B05",
+        "B06",
+        "B07",
+        "G04"
+      ],
+      "source_url": "https://www.rbi.org.in/",
+      "source_status": "source_acquisition_pending",
+      "required_evidence": "Obtain current KYC/fraud directions, entity applicability, retention and reporting authority",
+      "policy_ids": [
+        "POL-026",
+        "POL-007",
+        "POL-004"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Legal and Compliance Officer",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-005",
+      "title": "NPCI UPI rules and certification",
+      "version_pin": "Customer/scheme release and circular bundle required",
+      "obligation_type": "scheme/contract",
+      "applicability_trigger": "UPI participant or contracted technology service in participant scope",
+      "applicable_packages": [
+        "B02",
+        "B10",
+        "E04",
+        "Q03"
+      ],
+      "source_url": "https://www.npci.org.in/what-we-do/upi/product-overview",
+      "source_status": "public_page_only_controlled_rules_pending",
+      "required_evidence": "Authorized current rules, certification, disputes, limits and participant obligations; overview is insufficient",
+      "policy_ids": [
+        "POL-024",
+        "POL-025",
+        "POL-021"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Standards Owner and Domain Specialist",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-006",
+      "title": "DPDP Act and Rules",
+      "version_pin": "Act2023; Rules14Nov2025; corrigendum16Dec2025; per-provision commencement pending",
+      "obligation_type": "law/regulation",
+      "applicability_trigger": "Digital personal data processing within applicable statutory scope",
+      "applicable_packages": [
+        "G04",
+        "S08",
+        "D01",
+        "B07",
+        "O04"
+      ],
+      "source_url": "https://www.meity.gov.in/documents/act-and-policies/digital-personal-data-protection-rules-2025-gDOxUjMtQWa?pageTitle=Digital-Personal-Data-Protection-Rules-2025",
+      "source_status": "official_index_verified_effective_schedule_pending",
+      "required_evidence": "Pin Gazette, corrigendum and phased enforcement per clause before claiming current obligations",
+      "policy_ids": [
+        "POL-007",
+        "POL-028",
+        "POL-029",
+        "POL-037"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Legal and Compliance Officer",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-007",
+      "title": "CERT-In directions",
+      "version_pin": "28Apr2022 plus May2022 FAQ; amendments pending",
+      "obligation_type": "law/regulation",
+      "applicability_trigger": "India; covered entity and service categories",
+      "applicable_packages": [
+        "S06",
+        "O01",
+        "O02",
+        "G04"
+      ],
+      "source_url": "https://www.cert-in.org.in/PDF/FAQs_on_CyberSecurityDirections_May2022.pdf",
+      "source_status": "official_faq_verified_direction_refresh_pending",
+      "required_evidence": "Determine incident clocks, log/clock and service-specific requirements from operative directions",
+      "policy_ids": [
+        "POL-013",
+        "POL-022",
+        "POL-037"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Legal and Compliance Officer",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-008",
+      "title": "IT Act and applicable evidence law",
+      "version_pin": "Operative consolidated texts pending",
+      "obligation_type": "law/regulation",
+      "applicability_trigger": "India; electronic records, access, digital signatures and disputes",
+      "applicable_packages": [
+        "G04",
+        "G05",
+        "S01"
+      ],
+      "source_url": "https://www.indiacode.nic.in/",
+      "source_status": "source_acquisition_pending",
+      "required_evidence": "Resolve electronic evidence, offences, record admissibility and signatures; no generic compliance declaration",
+      "policy_ids": [
+        "POL-004",
+        "POL-013",
+        "POL-038"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Legal and Compliance Officer",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-009",
+      "title": "PMLA rules and FIU-IND",
+      "version_pin": "Current statute/rules/reporting schema pending",
+      "obligation_type": "law/regulation",
+      "applicability_trigger": "Reporting entity/customer financial-crime service and applicable digital-asset activities",
+      "applicable_packages": [
+        "B06",
+        "B09",
+        "G04"
+      ],
+      "source_url": "https://fiuindia.gov.in/",
+      "source_status": "source_acquisition_pending",
+      "required_evidence": "Pin reporting-entity duties, schema, retention, confidentiality and accountable filer",
+      "policy_ids": [
+        "POL-026",
+        "POL-027",
+        "POL-037"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Legal and Compliance Officer",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-010",
+      "title": "TRAI commercial communications",
+      "version_pin": "Current TCCCPR and amendments pending",
+      "obligation_type": "law/regulation",
+      "applicability_trigger": "India outbound marketing, voice/SMS and relevant sender/operator role",
+      "applicable_packages": [
+        "O05",
+        "C05",
+        "C01",
+        "G04"
+      ],
+      "source_url": "https://www.trai.gov.in/",
+      "source_status": "source_acquisition_pending",
+      "required_evidence": "Determine consent, preferences, registration, recording/disclosure and channel requirements",
+      "policy_ids": [
+        "POL-029",
+        "POL-030"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Legal and Compliance Officer",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-011",
+      "title": "UIDAI and CKYCR/CERSAI",
+      "version_pin": "Current permitted-use/participant specifications pending",
+      "obligation_type": "law/scheme/contract",
+      "applicability_trigger": "Aadhaar or CKYCR integration and KYC tokenization",
+      "applicable_packages": [
+        "B07",
+        "S08",
+        "G04"
+      ],
+      "source_url": "https://uidai.gov.in/",
+      "source_status": "source_acquisition_pending",
+      "required_evidence": "Obtain authorized UIDAI and CERSAI interface/legal profiles separately; no assumed access entitlement",
+      "policy_ids": [
+        "POL-026",
+        "POL-027",
+        "POL-007"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Legal and Compliance Officer",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-012",
+      "title": "Sector and corporate obligations",
+      "version_pin": "SEBI/IRDAI/GST/company/employment/consumer profiles pending",
+      "obligation_type": "law/regulation",
+      "applicability_trigger": "Actual entity, products, staff, assets and customer sector",
+      "applicable_packages": [
+        "G02",
+        "G04",
+        "G06",
+        "G07",
+        "B09",
+        "C02"
+      ],
+      "source_url": "https://www.indiacode.nic.in/",
+      "source_status": "source_acquisition_pending",
+      "required_evidence": "Separate triggered instruments into versioned child records before affected operations",
+      "policy_ids": [
+        "POL-004",
+        "POL-027",
+        "POL-031",
+        "POL-032"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Legal and Compliance Officer",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-013",
+      "title": "RBI FREE-AI",
+      "version_pin": "Report and subsequent directions pending verification",
+      "obligation_type": "guidance_until_binding_source_identified",
+      "applicability_trigger": "Financial-sector AI use cases",
+      "applicable_packages": [
+        "D07",
+        "D05",
+        "G03",
+        "G04"
+      ],
+      "source_url": "https://www.rbi.org.in/",
+      "source_status": "source_acquisition_pending",
+      "required_evidence": "Distinguish report recommendations from subsequent enforceable directions",
+      "policy_ids": [
+        "POL-028",
+        "POL-004"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Standards Owner and Domain Specialist",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-014",
+      "title": "ISO/IEC 27001",
+      "version_pin": "2022 + Amendment1:2024",
+      "obligation_type": "voluntary_standard_or_contract",
+      "applicability_trigger": "Organization ISMS; actual certification scope separately approved",
+      "applicable_packages": [
+        "S01",
+        "G03",
+        "G05",
+        "R03"
+      ],
+      "source_url": "https://www.iso.org/standard/27001",
+      "source_status": "official_edition_verified_licensed_clauses_pending",
+      "required_evidence": "ISMS scope, risk treatment, Statement of Applicability, internal audit and management review",
+      "policy_ids": [
+        "POL-003",
+        "POL-004",
+        "POL-038"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Standards Owner and Domain Specialist",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-015",
+      "title": "ISO/IEC 27701",
+      "version_pin": "2025",
+      "obligation_type": "voluntary_standard_or_contract",
+      "applicability_trigger": "Privacy management for controller/processor roles",
+      "applicable_packages": [
+        "S08",
+        "D01",
+        "G04",
+        "G05"
+      ],
+      "source_url": "https://www.iso.org/standard/27701",
+      "source_status": "official_edition_verified_licensed_clauses_pending",
+      "required_evidence": "Privacy management system; map actual processing roles and licensed requirements",
+      "policy_ids": [
+        "POL-007",
+        "POL-037"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Standards Owner and Domain Specialist",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-016",
+      "title": "ISO/IEC 42001",
+      "version_pin": "2023; amendment check required",
+      "obligation_type": "voluntary_standard_or_contract",
+      "applicability_trigger": "AI management system",
+      "applicable_packages": [
+        "D07",
+        "D04",
+        "D05",
+        "G03"
+      ],
+      "source_url": "https://www.iso.org/standard/42001",
+      "source_status": "official_edition_verified_licensed_clauses_pending",
+      "required_evidence": "AI scope, impact/risk, accountable oversight and lifecycle evidence",
+      "policy_ids": [
+        "POL-008",
+        "POL-028",
+        "POL-036"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Standards Owner and Domain Specialist",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-017",
+      "title": "ISO/IEC 27017",
+      "version_pin": "Edition and amendments pending pin",
+      "obligation_type": "voluntary_standard_or_contract",
+      "applicability_trigger": "Cloud service provider/customer profile",
+      "applicable_packages": [
+        "R06",
+        "S04",
+        "E07",
+        "T01"
+      ],
+      "source_url": "https://www.iso.org/",
+      "source_status": "licensed_source_and_edition_pending",
+      "required_evidence": "Cloud control responsibilities and shared-responsibility evidence",
+      "policy_ids": [
+        "POL-006",
+        "POL-011",
+        "POL-039"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Standards Owner and Domain Specialist",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-018",
+      "title": "ISO/IEC 27018",
+      "version_pin": "Edition and amendments pending pin",
+      "obligation_type": "voluntary_standard_or_contract",
+      "applicability_trigger": "Public-cloud PII processing where selected",
+      "applicable_packages": [
+        "S08",
+        "R06",
+        "D01"
+      ],
+      "source_url": "https://www.iso.org/",
+      "source_status": "licensed_source_and_edition_pending",
+      "required_evidence": "PII protection and provider processing controls",
+      "policy_ids": [
+        "POL-007",
+        "POL-008"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Standards Owner and Domain Specialist",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-019",
+      "title": "ISO/IEC 23894",
+      "version_pin": "Edition and amendments pending pin",
+      "obligation_type": "voluntary_guidance_or_contract",
+      "applicability_trigger": "AI risk process",
+      "applicable_packages": [
+        "D07",
+        "D05",
+        "G03"
+      ],
+      "source_url": "https://www.iso.org/",
+      "source_status": "licensed_source_and_edition_pending",
+      "required_evidence": "AI risk identification, treatment and monitoring",
+      "policy_ids": [
+        "POL-028",
+        "POL-003"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Standards Owner and Domain Specialist",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-020",
+      "title": "ISO/IEC 25010",
+      "version_pin": "Edition and amendments pending pin",
+      "obligation_type": "voluntary_standard_or_contract",
+      "applicability_trigger": "Product quality model and acceptance profile",
+      "applicable_packages": [
+        "Q09",
+        "P03",
+        "R02",
+        "Q05"
+      ],
+      "source_url": "https://www.iso.org/",
+      "source_status": "licensed_source_and_edition_pending",
+      "required_evidence": "Quality attributes translated into measurable acceptance criteria",
+      "policy_ids": [
+        "POL-019",
+        "POL-020",
+        "POL-034"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Standards Owner and Domain Specialist",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-021",
+      "title": "ISO/IEC 20000-1",
+      "version_pin": "Edition and amendments pending pin",
+      "obligation_type": "voluntary_standard_or_contract",
+      "applicability_trigger": "Service management system",
+      "applicable_packages": [
+        "O02",
+        "C04",
+        "O03"
+      ],
+      "source_url": "https://www.iso.org/",
+      "source_status": "licensed_source_and_edition_pending",
+      "required_evidence": "Service lifecycle, SLA, changes, incidents and suppliers",
+      "policy_ids": [
+        "POL-022",
+        "POL-039"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Standards Owner and Domain Specialist",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-022",
+      "title": "ISO 22301",
+      "version_pin": "Edition and amendments pending pin",
+      "obligation_type": "voluntary_standard_or_contract",
+      "applicability_trigger": "Business continuity management",
+      "applicable_packages": [
+        "O06",
+        "O01",
+        "G03"
+      ],
+      "source_url": "https://www.iso.org/",
+      "source_status": "licensed_source_and_edition_pending",
+      "required_evidence": "BIA, continuity strategies and exercised recovery",
+      "policy_ids": [
+        "POL-023"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Standards Owner and Domain Specialist",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-023",
+      "title": "ISO/IEC/IEEE 12207",
+      "version_pin": "Edition and amendments pending pin",
+      "obligation_type": "voluntary_standard_or_contract",
+      "applicability_trigger": "Software lifecycle process",
+      "applicable_packages": [
+        "E06",
+        "P04",
+        "Q09",
+        "R02"
+      ],
+      "source_url": "https://www.iso.org/",
+      "source_status": "licensed_source_and_edition_pending",
+      "required_evidence": "Lifecycle process, deliverables, review and traceability",
+      "policy_ids": [
+        "POL-015",
+        "POL-019"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Standards Owner and Domain Specialist",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-024",
+      "title": "ISO/IEC/IEEE 29119 series",
+      "version_pin": "Each selected part and edition pending pin",
+      "obligation_type": "voluntary_standard_or_contract",
+      "applicability_trigger": "Software testing process/specification",
+      "applicable_packages": [
+        "Q01",
+        "Q02",
+        "Q03",
+        "Q04",
+        "Q09"
+      ],
+      "source_url": "https://www.iso.org/",
+      "source_status": "licensed_source_and_edition_pending",
+      "required_evidence": "Testing process, documentation, techniques and specific applicable parts",
+      "policy_ids": [
+        "POL-019"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Standards Owner and Domain Specialist",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-025",
+      "title": "ISO 9001",
+      "version_pin": "Edition/amendments pending pin",
+      "obligation_type": "voluntary_standard_or_contract",
+      "applicability_trigger": "Company quality management system",
+      "applicable_packages": [
+        "Q09",
+        "G05",
+        "P04"
+      ],
+      "source_url": "https://www.iso.org/",
+      "source_status": "licensed_source_and_edition_pending",
+      "required_evidence": "Quality objectives, processes, corrective action and management review",
+      "policy_ids": [
+        "POL-036",
+        "POL-038"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Standards Owner and Domain Specialist",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-026",
+      "title": "ISO 20022 repository",
+      "version_pin": "Per-message ID/version, XSD, code-set and snapshot hashes required",
+      "obligation_type": "technical_standard_plus_scheme_contract",
+      "applicability_trigger": "Financial message product and relevant communities",
+      "applicable_packages": [
+        "B03",
+        "R05",
+        "E05",
+        "E10",
+        "Q03"
+      ],
+      "source_url": "https://www.iso20022.org/standardsrepository",
+      "source_status": "official_repository_verified_profile_pending",
+      "required_evidence": "Data dictionary/business process catalogue; pin message and usage profile, semantic/state test suite",
+      "policy_ids": [
+        "POL-025"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Standards Owner and Domain Specialist",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-027",
+      "title": "ISO 20022 usage profiles",
+      "version_pin": "Customer/scheme profile and exact release pending",
+      "obligation_type": "scheme/contract",
+      "applicability_trigger": "Each supported clearing/payment community",
+      "applicable_packages": [
+        "B03",
+        "B02",
+        "B04",
+        "B10",
+        "R05"
+      ],
+      "source_url": "https://www.iso20022.org/faq",
+      "source_status": "official_background_verified_profile_pending",
+      "required_evidence": "Repository standard is distinct from a participant's usage rules and interoperability acceptance",
+      "policy_ids": [
+        "POL-025",
+        "POL-024"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Standards Owner and Domain Specialist",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-028",
+      "title": "SWIFT CSCF",
+      "version_pin": "v2026",
+      "obligation_type": "scheme/contract",
+      "applicability_trigger": "SWIFT user architecture type and in-scope components",
+      "applicable_packages": [
+        "B04",
+        "S01",
+        "S04",
+        "G05"
+      ],
+      "source_url": "https://www.swift.com/ja/node/310405",
+      "source_status": "official_edition_verified_full_controls_pending",
+      "required_evidence": "Resolve mandatory/advisory controls for architecture type; assessment and attestation are separate",
+      "policy_ids": [
+        "POL-025",
+        "POL-038",
+        "POL-002"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Standards Owner and Domain Specialist",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-029",
+      "title": "SWIFT CSP policy and independent assessment",
+      "version_pin": "v2026 curriculum identifies policy/IAF; operative package required",
+      "obligation_type": "scheme/contract",
+      "applicability_trigger": "SWIFT customer assurance/assessor engagement",
+      "applicable_packages": [
+        "B04",
+        "G05",
+        "S01",
+        "C04"
+      ],
+      "source_url": "https://www.swift.com/ja/node/310405",
+      "source_status": "official_edition_reference_verified_package_pending",
+      "required_evidence": "Licensed/current policy and assessor eligibility; multi-LLM review cannot replace independent assessment",
+      "policy_ids": [
+        "POL-038",
+        "POL-002"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Standards Owner and Domain Specialist",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-030",
+      "title": "SWIFT CBPR+ / FIN / connectivity",
+      "version_pin": "SR2026 mentioned officially; precise message/service profile pending",
+      "obligation_type": "scheme/contract",
+      "applicability_trigger": "SWIFT messaging or partner solution in selected service scope",
+      "applicable_packages": [
+        "B04",
+        "B03",
+        "E10",
+        "R05",
+        "Q03"
+      ],
+      "source_url": "https://www.swift.com/standards/iso-20022/iso-20022-partners",
+      "source_status": "official_release_reference_verified_profile_pending",
+      "required_evidence": "Pin CBPR+ usage rules, FIN variants, RMA/connectivity and partner/customer testing separately",
+      "policy_ids": [
+        "POL-025",
+        "POL-021"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Standards Owner and Domain Specialist",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-031",
+      "title": "NIST CSF",
+      "version_pin": "2.0; profile snapshot pending",
+      "obligation_type": "voluntary_guidance_or_contract",
+      "applicability_trigger": "Company cyber risk baseline",
+      "applicable_packages": [
+        "S01",
+        "G03",
+        "G05",
+        "S06"
+      ],
+      "source_url": "https://www.nist.gov/cyberframework",
+      "source_status": "official_project_verified_profile_pending",
+      "required_evidence": "Organization current/target profiles and measured outcomes",
+      "policy_ids": [
+        "POL-003",
+        "POL-022",
+        "POL-038"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Standards Owner and Domain Specialist",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-032",
+      "title": "NIST AI RMF",
+      "version_pin": "1.0 profile; final source snapshot pending",
+      "obligation_type": "voluntary_guidance_or_contract",
+      "applicability_trigger": "AI systems and model risk",
+      "applicable_packages": [
+        "D07",
+        "D05",
+        "R07"
+      ],
+      "source_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "source_status": "official_project_verified_profile_pending",
+      "required_evidence": "Map intended use, risks, measurement and management; select GenAI profile separately",
+      "policy_ids": [
+        "POL-028",
+        "POL-008"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Standards Owner and Domain Specialist",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-033",
+      "title": "NIST SSDF",
+      "version_pin": "SP800-218 v1.1; monitor successors/drafts separately",
+      "obligation_type": "voluntary_guidance_or_contract",
+      "applicability_trigger": "Software development and supply chain",
+      "applicable_packages": [
+        "S02",
+        "S10",
+        "E06",
+        "Q09"
+      ],
+      "source_url": "https://csrc.nist.gov/projects/ssdf",
+      "source_status": "official_version_verified_control_mapping_pending",
+      "required_evidence": "Secure development practices and evidence; do not treat draft successor as final by default",
+      "policy_ids": [
+        "POL-015",
+        "POL-016"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Standards Owner and Domain Specialist",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-034",
+      "title": "NIST AI secure development profile",
+      "version_pin": "SP800-218A; source snapshot pending",
+      "obligation_type": "voluntary_guidance_or_contract",
+      "applicability_trigger": "GenAI/model development lifecycle",
+      "applicable_packages": [
+        "D03",
+        "D04",
+        "S09",
+        "S10"
+      ],
+      "source_url": "https://csrc.nist.gov/projects/ssdf",
+      "source_status": "official_document_reference_verified_mapping_pending",
+      "required_evidence": "Secure AI/model development profile; dataset/model pipeline evidence",
+      "policy_ids": [
+        "POL-028",
+        "POL-016"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Standards Owner and Domain Specialist",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-035",
+      "title": "NIST SP800-53",
+      "version_pin": "Rev5; Release5.2.0 update noted27Aug2025",
+      "obligation_type": "voluntary_guidance_or_contract",
+      "applicability_trigger": "Selected security/privacy control baseline",
+      "applicable_packages": [
+        "S01",
+        "S05",
+        "S06",
+        "S08",
+        "G05"
+      ],
+      "source_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+      "source_status": "official_update_verified_control_snapshot_pending",
+      "required_evidence": "Tailor selected controls/parameters and independent assessment; crosswalk is not equivalence",
+      "policy_ids": [
+        "POL-004",
+        "POL-005",
+        "POL-013"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Standards Owner and Domain Specialist",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-036",
+      "title": "NIST zero trust",
+      "version_pin": "SP800-207 final; snapshot pending",
+      "obligation_type": "voluntary_guidance_or_contract",
+      "applicability_trigger": "Identity/network/resource architecture",
+      "applicable_packages": [
+        "S05",
+        "R03",
+        "S04",
+        "T01"
+      ],
+      "source_url": "https://csrc.nist.gov/pubs/sp/800/207/final",
+      "source_status": "official_publication_verified_mapping_pending",
+      "required_evidence": "Continuous contextual authorization and resource boundaries",
+      "policy_ids": [
+        "POL-005",
+        "POL-006"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Standards Owner and Domain Specialist",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-037",
+      "title": "NIST incident response",
+      "version_pin": "SP800-61 Rev3 final",
+      "obligation_type": "voluntary_guidance_or_contract",
+      "applicability_trigger": "Incident process and CSF alignment",
+      "applicable_packages": [
+        "S06",
+        "O02",
+        "O01"
+      ],
+      "source_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+      "source_status": "official_publication_verified_mapping_pending",
+      "required_evidence": "Incident preparation, response, recovery and improvement",
+      "policy_ids": [
+        "POL-022",
+        "POL-023"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Standards Owner and Domain Specialist",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-038",
+      "title": "NIST identity crypto privacy supply-chain extensions",
+      "version_pin": "SP800-63, SP800-57, SP800-161, Privacy Framework: exact editions pending",
+      "obligation_type": "voluntary_guidance_or_contract",
+      "applicability_trigger": "Identity/cryptographic/supplier/privacy design",
+      "applicable_packages": [
+        "S05",
+        "S08",
+        "S10",
+        "R03"
+      ],
+      "source_url": "https://csrc.nist.gov/publications",
+      "source_status": "source_acquisition_pending",
+      "required_evidence": "Split applicable documents/parts into versioned child records; approved crypto and identity profiles",
+      "policy_ids": [
+        "POL-012",
+        "POL-005",
+        "POL-016"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Standards Owner and Domain Specialist",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-039",
+      "title": "OWASP ASVS",
+      "version_pin": "5.0.0",
+      "obligation_type": "voluntary_standard_or_contract",
+      "applicability_trigger": "Web/API application verification; select risk-based profile/level",
+      "applicable_packages": [
+        "S02",
+        "Q07",
+        "E01",
+        "E02",
+        "E04"
+      ],
+      "source_url": "https://owasp.org/www-project-application-security-verification-standard/",
+      "source_status": "official_stable_version_verified_clause_mapping_pending",
+      "required_evidence": "Version-qualified requirement IDs and test evidence; level selected by actual risk and contract",
+      "policy_ids": [
+        "POL-015",
+        "POL-019"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Standards Owner and Domain Specialist",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-040",
+      "title": "OWASP Web Top10",
+      "version_pin": "2025",
+      "obligation_type": "awareness_guidance",
+      "applicability_trigger": "Web threat awareness and training",
+      "applicable_packages": [
+        "S02",
+        "Q07",
+        "E01",
+        "E02"
+      ],
+      "source_url": "https://owasp.org/Top10/",
+      "source_status": "official_release_verified",
+      "required_evidence": "Awareness taxonomy supports threat coverage; passing Top10 list is not full security verification",
+      "policy_ids": [
+        "POL-015",
+        "POL-018"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Standards Owner and Domain Specialist",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-041",
+      "title": "OWASP API Security Top10",
+      "version_pin": "2023 release; snapshot pending",
+      "obligation_type": "awareness_guidance",
+      "applicability_trigger": "API security abuse cases",
+      "applicable_packages": [
+        "E04",
+        "Q03",
+        "Q07",
+        "S02"
+      ],
+      "source_url": "https://owasp.org/API-Security/",
+      "source_status": "official_project_verified_profile_pending",
+      "required_evidence": "Object/property/function authorization and API-specific abuse coverage",
+      "policy_ids": [
+        "POL-015",
+        "POL-019"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Standards Owner and Domain Specialist",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-042",
+      "title": "OWASP MASVS and MASTG",
+      "version_pin": "Exact stable tags pending",
+      "obligation_type": "voluntary_standard_or_guidance",
+      "applicability_trigger": "Mobile applications/channels",
+      "applicable_packages": [
+        "E09",
+        "Q07",
+        "R03"
+      ],
+      "source_url": "https://owasp.org/www-project-mobile-app-security/",
+      "source_status": "official_project_verified_tags_pending",
+      "required_evidence": "Pin separate verification and testing guides; platform-specific manual tests",
+      "policy_ids": [
+        "POL-019",
+        "POL-015"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Standards Owner and Domain Specialist",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-043",
+      "title": "OWASP SAMM WSTG and Cheat Sheets",
+      "version_pin": "Each selected release/commit pending",
+      "obligation_type": "voluntary_guidance",
+      "applicability_trigger": "Security maturity, testing and implementation guidance",
+      "applicable_packages": [
+        "S01",
+        "S02",
+        "Q07",
+        "Q09"
+      ],
+      "source_url": "https://owasp.org/",
+      "source_status": "source_acquisition_pending",
+      "required_evidence": "Separate maturity measurement from specific test procedures and code guidance",
+      "policy_ids": [
+        "POL-015",
+        "POL-019",
+        "POL-036"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Standards Owner and Domain Specialist",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-044",
+      "title": "OWASP GenAI and agentic security",
+      "version_pin": "Exact LLM/agentic release documents and commits pending",
+      "obligation_type": "voluntary_guidance",
+      "applicability_trigger": "LLM applications, RAG, tools and agent systems",
+      "applicable_packages": [
+        "S09",
+        "A08",
+        "D06",
+        "T03",
+        "R07"
+      ],
+      "source_url": "https://genai.owasp.org/",
+      "source_status": "official_project_verified_tags_pending",
+      "required_evidence": "Threat-model prompt injection, excessive agency, memory/tool attacks and unsafe outputs",
+      "policy_ids": [
+        "POL-010",
+        "POL-011",
+        "POL-028"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Standards Owner and Domain Specialist",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-045",
+      "title": "PCI DSS and associated card standards",
+      "version_pin": "DSS exact current package and related PIN/P2PE/3DS profiles pending",
+      "obligation_type": "industry_standard_contract",
+      "applicability_trigger": "Cardholder/sensitive authentication data or in-scope service provider",
+      "applicable_packages": [
+        "S01",
+        "S05",
+        "B02",
+        "G05",
+        "E04"
+      ],
+      "source_url": "https://www.pcisecuritystandards.org/standards/pci-dss/",
+      "source_status": "official_standard_page_verified_package_pending",
+      "required_evidence": "Scope discovery and segmentation evidence; qualified assessment where required by scheme/customer",
+      "policy_ids": [
+        "POL-007",
+        "POL-012",
+        "POL-038"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Standards Owner and Domain Specialist",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-046",
+      "title": "FATF Recommendations",
+      "version_pin": "Current consolidated version pending",
+      "obligation_type": "intergovernmental_guidance",
+      "applicability_trigger": "AML/CFT and virtual-asset risk design subject to domestic law",
+      "applicable_packages": [
+        "B06",
+        "B09",
+        "G04"
+      ],
+      "source_url": "https://www.fatf-gafi.org/",
+      "source_status": "source_acquisition_pending",
+      "required_evidence": "Domestic legal obligations govern actual reporting authority; FATF is not standalone Indian law",
+      "policy_ids": [
+        "POL-026",
+        "POL-027"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Standards Owner and Domain Specialist",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-047",
+      "title": "WCAG",
+      "version_pin": "2.2; exact dated W3C recommendation snapshot pending",
+      "obligation_type": "technical_recommendation_or_contract",
+      "applicability_trigger": "Web/UI/accessibility profile; organization targets AA subject to actual legal/contract profile",
+      "applicable_packages": [
+        "P07",
+        "Q06",
+        "P05",
+        "E02"
+      ],
+      "source_url": "https://www.w3.org/TR/WCAG22/",
+      "source_status": "official_recommendation_verified_snapshot_pending",
+      "required_evidence": "Success-criterion matrix, keyboard/assistive-technology manual evidence and exceptions",
+      "policy_ids": [
+        "POL-034",
+        "POL-019"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Standards Owner and Domain Specialist",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-048",
+      "title": "Indian accessibility",
+      "version_pin": "Applicable RPwD/ICT/BIS/GIGW instruments and editions pending",
+      "obligation_type": "law_or_standard_depending_instrument",
+      "applicability_trigger": "India public/private service and customer-specific accessibility scope",
+      "applicable_packages": [
+        "G04",
+        "P07",
+        "Q06"
+      ],
+      "source_url": "https://www.indiacode.nic.in/",
+      "source_status": "source_acquisition_pending",
+      "required_evidence": "Determine exact applicable legal/technical instruments; WCAG target alone does not establish legal compliance",
+      "policy_ids": [
+        "POL-034",
+        "POL-004"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Legal and Compliance Officer",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-049",
+      "title": "SBOM and provenance profiles",
+      "version_pin": "SLSA1.2 verified; SPDX/CycloneDX exact schemas pending",
+      "obligation_type": "voluntary_technical_standard_or_contract",
+      "applicability_trigger": "Builds/dependencies/models/data/artifact supply chain",
+      "applicable_packages": [
+        "S10",
+        "E06",
+        "T05",
+        "S07"
+      ],
+      "source_url": "https://slsa.dev/spec/v1.2/",
+      "source_status": "slsa_version_verified_other_schemas_pending",
+      "required_evidence": "Pin schema versions, provenance predicates, signed subject digests and verification tools",
+      "policy_ids": [
+        "POL-016",
+        "POL-018"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Standards Owner and Domain Specialist",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-050",
+      "title": "CMMI",
+      "version_pin": "Model edition/access and appraisal scope pending",
+      "obligation_type": "maturity_model",
+      "applicability_trigger": "Company process improvement objective",
+      "applicable_packages": [
+        "Q09",
+        "G05",
+        "P04",
+        "G01"
+      ],
+      "source_url": "https://www.cmmiinstitute.com/cmmi",
+      "source_status": "official_model_page_verified_license_pending",
+      "required_evidence": "Process baselines, quantitative measures and causal improvement; Level5 claim requires valid appraisal evidence",
+      "policy_ids": [
+        "POL-036",
+        "POL-038"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Standards Owner and Domain Specialist",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    },
+    {
+      "id": "STDREG-051",
+      "title": "Language framework and platform specifications",
+      "version_pin": "Per-project Java/Angular/Oracle/tool/protocol versions required",
+      "obligation_type": "technical_specification_and_license",
+      "applicability_trigger": "Selected technology and deployment profile",
+      "applicable_packages": [
+        "E01",
+        "E02",
+        "E03",
+        "E04",
+        "E05",
+        "E06",
+        "E07",
+        "E08",
+        "E09",
+        "E10",
+        "R02",
+        "T03"
+      ],
+      "source_url": "https://www.oracle.com/java/technologies/",
+      "source_status": "source_acquisition_pending",
+      "required_evidence": "Pin actual vendor docs, language specs, driver/framework/runtime constraints and contract tests; no generic language-spec protocol claim",
+      "policy_ids": [
+        "POL-035"
+      ],
+      "qualification_status": "not_qualified",
+      "licensed_or_authoritative_snapshot": null,
+      "control_mapping": null,
+      "applicability_decision": null,
+      "owner_role": "Standards Owner and Domain Specialist",
+      "reviewer_role": "Independent qualified control reviewer",
+      "review_date": "2026-09-05"
+    }
+  ]
+}

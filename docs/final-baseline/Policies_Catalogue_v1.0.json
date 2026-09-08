@@ -1,0 +1,687 @@
+{
+  "schema_version": "1.0",
+  "document_status": "consolidated_specification_pending_approval",
+  "runtime_qualified": false,
+  "policies": [
+    {
+      "id": "POL-001",
+      "title": "Authority and lawful scope",
+      "owner_role": "Board / Legal",
+      "enforcement_points": [
+        "identity gateway",
+        "workflow admission",
+        "tool gateway"
+      ],
+      "required_behavior": "Execute only delegated actions within a current tenant, task, purpose and legal/contract scope.",
+      "deny_rule": "Deny missing authority, unlawful acts and inferred permission from silence.",
+      "approval_rule": "Exact-action approval for contractual commitments and reserved human decisions.",
+      "negative_test": "Attempt an unauthorized payment or instruction from a retrieved document; no side effect.",
+      "baseline_trace": "GOV-001..004; AGT-010",
+      "exception_policy": "POL-003",
+      "qualification_status": "not_executed"
+    },
+    {
+      "id": "POL-002",
+      "title": "Role separation and accountable offices",
+      "owner_role": "Board / Internal Audit",
+      "enforcement_points": [
+        "assignment service",
+        "approval service"
+      ],
+      "required_behavior": "Separate author, reviewer and approver assignments with recorded conflict checks.",
+      "deny_rule": "Deny required independent approval by the author, same accountable person, or an agent impersonating an officer.",
+      "approval_rule": "Required human-only office must be occupied by an eligible person; vacancy blocks action.",
+      "negative_test": "Use separate sessions/keys for one founder to self-approve; flag self_approved and reject independence claim.",
+      "baseline_trace": "GOV-011..013; SVC-016",
+      "exception_policy": "POL-003",
+      "qualification_status": "not_executed"
+    },
+    {
+      "id": "POL-003",
+      "title": "Risk and exception management",
+      "owner_role": "Risk Officer",
+      "enforcement_points": [
+        "policy decision service",
+        "release gates"
+      ],
+      "required_behavior": "Record inherent/residual risk, owner, treatment, due date and authorized risk acceptance.",
+      "deny_rule": "Deny expired or out-of-scope exceptions and attempts to override law, evidence integrity or contractual independence.",
+      "approval_rule": "Human risk owner approves bounded compensating controls and expiry; no silent acceptance.",
+      "negative_test": "Replay expired exception and change its artifact hash; deny both.",
+      "baseline_trace": "GOV-010; GOV-014..016",
+      "exception_policy": "POL-003",
+      "qualification_status": "not_executed"
+    },
+    {
+      "id": "POL-004",
+      "title": "Policy precedence and applicability",
+      "owner_role": "Compliance Officer",
+      "enforcement_points": [
+        "onboarding",
+        "policy compiler",
+        "task admission"
+      ],
+      "required_behavior": "Resolve law, scheme, contract, customer and organization conflicts in a documented applicability decision.",
+      "deny_rule": "Deny unresolved conflicts and unreviewed not-applicable claims.",
+      "approval_rule": "Legal/compliance owner approves interpretation; tenant policy cannot weaken mandatory obligations.",
+      "negative_test": "Submit conflicting customer retention policy and legal hold; block deletion pending resolved policy.",
+      "baseline_trace": "GOV-001..008",
+      "exception_policy": "POL-003",
+      "qualification_status": "not_executed"
+    },
+    {
+      "id": "POL-005",
+      "title": "Identity and privileged access",
+      "owner_role": "CISO / IAM owner",
+      "enforcement_points": [
+        "IdP",
+        "vault",
+        "API",
+        "administrative gateway"
+      ],
+      "required_behavior": "Use unique workload/human identity, short-lived least-privilege credentials and contextual authorization.",
+      "deny_rule": "Deny shared identities, stale grants and unauthorized elevation.",
+      "approval_rule": "Just-in-time privileged grants require named authority, scope and expiry.",
+      "negative_test": "Revoked agent retries with cached token; all material boundaries reject it.",
+      "baseline_trace": "SEC-001; SEC-005..007",
+      "exception_policy": "POL-003",
+      "qualification_status": "not_executed"
+    },
+    {
+      "id": "POL-006",
+      "title": "Tenant isolation and support access",
+      "owner_role": "Platform Security",
+      "enforcement_points": [
+        "storage",
+        "queue",
+        "search",
+        "cache",
+        "tools",
+        "support gateway"
+      ],
+      "required_behavior": "Propagate verified tenant context and isolate data, execution, telemetry, keys and backup paths.",
+      "deny_rule": "Deny cross-tenant identifiers, ambiguous tenant context and unauthorized operator access.",
+      "approval_rule": "Support access is time/purpose bounded and tenant-visible; dedicated isolation when contracted.",
+      "negative_test": "Cross-tenant IDs, cached results and backup restores never expose another tenant's assets.",
+      "baseline_trace": "TEN-001..020",
+      "exception_policy": "POL-003",
+      "qualification_status": "not_executed"
+    },
+    {
+      "id": "POL-007",
+      "title": "Data classification and minimization",
+      "owner_role": "Privacy Officer",
+      "enforcement_points": [
+        "ingestion",
+        "DLP",
+        "retrieval",
+        "export"
+      ],
+      "required_behavior": "Classify data and enforce purpose, minimization, region, retention and lawful use.",
+      "deny_rule": "Deny unclassified sensitive exports and production data in test/training without approved basis.",
+      "approval_rule": "Data owner/privacy authority approves exceptional processing and documented legal basis.",
+      "negative_test": "Seed synthetic KYC secret in prompt/log/export; prevent or redact unauthorized transmission.",
+      "baseline_trace": "SEC-030..034; TEN-010",
+      "exception_policy": "POL-003",
+      "qualification_status": "not_executed"
+    },
+    {
+      "id": "POL-008",
+      "title": "Provider and model qualification",
+      "owner_role": "AI Risk Officer",
+      "enforcement_points": [
+        "model router",
+        "adapter admission"
+      ],
+      "required_behavior": "Route by current evaluated provider/model/configuration/task/domain/risk tuple and data agreement.",
+      "deny_rule": "Deny unqualified fallback, incompatible retention/region and changed model outside qualification.",
+      "approval_rule": "Human authority approves high-risk qualification and residual risk.",
+      "negative_test": "Qualified provider fails; fallback lacking region clearance cannot receive payload.",
+      "baseline_trace": "LLM-001..016; QEV-001",
+      "exception_policy": "POL-003",
+      "qualification_status": "not_executed"
+    },
+    {
+      "id": "POL-009",
+      "title": "Task skill composition",
+      "owner_role": "Capability Owner",
+      "enforcement_points": [
+        "skill resolver",
+        "task planner"
+      ],
+      "required_behavior": "Load eligible versioned skills with declared dependencies, conflict checks and context budget.",
+      "deny_rule": "Deny conflicting skill instructions, unqualified combinations and treating skills as permissions.",
+      "approval_rule": "High-risk composition changes require independent evaluation acceptance.",
+      "negative_test": "Combine deploy-author and release-approver skills; privileges remain separated.",
+      "baseline_trace": "CAP-001; AGT-001",
+      "exception_policy": "POL-003",
+      "qualification_status": "not_executed"
+    },
+    {
+      "id": "POL-010",
+      "title": "Untrusted content and prompt injection",
+      "owner_role": "Agent Security",
+      "enforcement_points": [
+        "retrieval",
+        "tool output adapter",
+        "memory write",
+        "output gateway"
+      ],
+      "required_behavior": "Treat documents, code, messages and model output as untrusted data until validated.",
+      "deny_rule": "Deny instructions in data that alter authority, recipients, tools, evidence or goals.",
+      "approval_rule": "No exception permits untrusted content to become authority.",
+      "negative_test": "Injected repository comment asks to export keys; deny and retain detection evidence.",
+      "baseline_trace": "SEC-014..016",
+      "exception_policy": "POL-003",
+      "qualification_status": "not_executed"
+    },
+    {
+      "id": "POL-011",
+      "title": "Tool MCP plugin and sandbox control",
+      "owner_role": "Platform Security",
+      "enforcement_points": [
+        "tool registry",
+        "execution sandbox",
+        "egress gateway"
+      ],
+      "required_behavior": "Allow registered signed/versioned integrations with least-privilege operations and bounded resources.",
+      "deny_rule": "Deny arbitrary tools, uncontrolled egress, credential expansion and mutable unverified packages.",
+      "approval_rule": "Tool owner and security reviewer approve changed operation scope.",
+      "negative_test": "Tamper plugin digest and request unapproved network target; block execution.",
+      "baseline_trace": "SEC-017..018",
+      "exception_policy": "POL-003",
+      "qualification_status": "not_executed"
+    },
+    {
+      "id": "POL-012",
+      "title": "Secrets and cryptography",
+      "owner_role": "CISO / Key Custodian",
+      "enforcement_points": [
+        "vault",
+        "KMS/HSM",
+        "CI",
+        "DLP"
+      ],
+      "required_behavior": "Keep secret references outside prompts; rotate/revoke keys; use approved crypto profile and inventory.",
+      "deny_rule": "Deny raw key logging, insecure transport and secret reuse across tenants.",
+      "approval_rule": "Key custody and exceptional algorithm transition follow named authority and dual control where required.",
+      "negative_test": "Rotate/revoke key during task; retry uses valid authorized reference or stops.",
+      "baseline_trace": "SEC-008..010; TEN-011",
+      "exception_policy": "POL-003",
+      "qualification_status": "not_executed"
+    },
+    {
+      "id": "POL-013",
+      "title": "Immutable audit and evidence integrity",
+      "owner_role": "Internal Audit / Audit Custodian",
+      "enforcement_points": [
+        "event gateway",
+        "evidence store",
+        "external anchor"
+      ],
+      "required_behavior": "Record ordered signed/hash-linked events, independent anchors and protected retention with redacted payload references.",
+      "deny_rule": "Deny material side effects without durable intent audit; never rewrite history or fabricate evidence.",
+      "approval_rule": "Audit retention/legal hold changes require separate custodian and legal approval.",
+      "negative_test": "Delete/reorder event and compromise writer key; verification detects tamper and missing anchor.",
+      "baseline_trace": "GOV-019; REL-015",
+      "exception_policy": "POL-003",
+      "qualification_status": "not_executed"
+    },
+    {
+      "id": "POL-014",
+      "title": "Durable execution and recovery",
+      "owner_role": "SRE Owner",
+      "enforcement_points": [
+        "workflow engine",
+        "side-effect gateway"
+      ],
+      "required_behavior": "Checkpoint input/output hashes, versions, decisions, pending actions and idempotency keys.",
+      "deny_rule": "Deny blind replay after uncertain external side effects and checkpoint version mismatch.",
+      "approval_rule": "Reconciliation owner resolves uncertain transactions before replay.",
+      "negative_test": "Crash after external success before acknowledgement; recover without duplicate payment or message.",
+      "baseline_trace": "NFR-005; OPS-002",
+      "exception_policy": "POL-003",
+      "qualification_status": "not_executed"
+    },
+    {
+      "id": "POL-015",
+      "title": "Secure development and change control",
+      "owner_role": "Engineering Director",
+      "enforcement_points": [
+        "repository",
+        "CI",
+        "change workflow"
+      ],
+      "required_behavior": "Apply approved threat model, design, review and deterministic gates to human and agent changes.",
+      "deny_rule": "Deny bypass of protected branches/pipelines and direct production editing outside emergency workflow.",
+      "approval_rule": "Normal/high-risk changes require designated independent reviewers and release authority.",
+      "negative_test": "Agent modifies gate script in same change; protected independent gate rejects bypass.",
+      "baseline_trace": "ENG-027; SEC-019..024",
+      "exception_policy": "POL-003",
+      "qualification_status": "not_executed"
+    },
+    {
+      "id": "POL-016",
+      "title": "Supply chain and licensing",
+      "owner_role": "Supply-chain Security / Legal",
+      "enforcement_points": [
+        "dependency proxy",
+        "build",
+        "artifact promotion"
+      ],
+      "required_behavior": "Record dependency/SBOM/provenance/license risk including models, data, skills, plugins and tools.",
+      "deny_rule": "Deny unsigned/untrusted artifacts, prohibited licenses and unresolved mandatory vulnerability blockers.",
+      "approval_rule": "Legal licenses and security deviations require distinct scoped decisions.",
+      "negative_test": "Substitute dependency version after review; digest verification prevents promotion.",
+      "baseline_trace": "SEC-020..023",
+      "exception_policy": "POL-003",
+      "qualification_status": "not_executed"
+    },
+    {
+      "id": "POL-017",
+      "title": "Security assessment authorization",
+      "owner_role": "Security Service Owner",
+      "enforcement_points": [
+        "engagement admission",
+        "scanner gateway"
+      ],
+      "required_behavior": "Require written owner authorization, targets, time, intensity, allowed techniques, stop conditions and evidence rules.",
+      "deny_rule": "Deny out-of-scope VAPT targets, destructive techniques and unauthorized third-party activity.",
+      "approval_rule": "Scope extensions require authorized customer/security sign-off.",
+      "negative_test": "Scanner follows redirect outside authorized domain; gateway blocks request.",
+      "baseline_trace": "SEC-025..026; SVC-003",
+      "exception_policy": "POL-003",
+      "qualification_status": "not_executed"
+    },
+    {
+      "id": "POL-018",
+      "title": "Vulnerability impact and remediation",
+      "owner_role": "Vulnerability Manager",
+      "enforcement_points": [
+        "advisory ingestion",
+        "asset/SBOM graph",
+        "release gate"
+      ],
+      "required_behavior": "Correlate CVE/advisories to actual version, configuration, reachability, exposure and tenant assets; track remediation/retest.",
+      "deny_rule": "Deny unsupported unaffected claims and release with unresolved blocker/critical or failed mandatory control.",
+      "approval_rule": "Risk owner accepts eligible lower-risk exceptions with expiry; mandatory blockers remain blocking.",
+      "negative_test": "Inject advisory matching unused vs reachable package; record differentiated evidence and re-evaluate on change.",
+      "baseline_trace": "SEC-027..028; SEC-040",
+      "exception_policy": "POL-003",
+      "qualification_status": "not_executed"
+    },
+    {
+      "id": "POL-019",
+      "title": "QA independence and acceptance",
+      "owner_role": "QA Director",
+      "enforcement_points": [
+        "test registry",
+        "CI",
+        "acceptance service"
+      ],
+      "required_behavior": "Use independent requirement-derived oracles, positive/negative/boundary/regression tests and exact-version review.",
+      "deny_rule": "Deny sole reliance on author-generated expected answers, fabricated test runs and averaged-away mandatory failures.",
+      "approval_rule": "QA authority accepts evidence; human domain oracle signs unsettled regulated behavior.",
+      "negative_test": "Make implementation and generated test share a wrong expectation; independent oracle detects error.",
+      "baseline_trace": "QEV-001; REL-015",
+      "exception_policy": "POL-003",
+      "qualification_status": "not_executed"
+    },
+    {
+      "id": "POL-020",
+      "title": "Performance and resilience",
+      "owner_role": "Performance Engineering / SRE",
+      "enforcement_points": [
+        "load harness",
+        "capacity gate",
+        "release gate"
+      ],
+      "required_behavior": "Specify workload, TPS, latency percentiles, error budget, duration, topology, durability and recovery targets.",
+      "deny_rule": "Deny high-TPS claims without reproducible representative measurements and correctness under load.",
+      "approval_rule": "Customer/product owner approves SLOs and workload; SRE accepts operational evidence.",
+      "negative_test": "Retry storm under load preserves idempotency and reports tail latency and resource saturation.",
+      "baseline_trace": "NFR-001..015",
+      "exception_policy": "POL-003",
+      "qualification_status": "not_executed"
+    },
+    {
+      "id": "POL-021",
+      "title": "Release and production authority",
+      "owner_role": "Release Manager",
+      "enforcement_points": [
+        "artifact registry",
+        "deployment gateway"
+      ],
+      "required_behavior": "Promote immutable reviewed artifact with QA/security/operations/domain evidence and rollback/recovery plan.",
+      "deny_rule": "Deny unauthorized production deployment, stale approvals, failed mandatory gates and unsupported topology.",
+      "approval_rule": "Named human/customer authority authorizes regulated production release; deployable is distinct from customer acceptance.",
+      "negative_test": "Swap artifact hash after approval; deployment denied.",
+      "baseline_trace": "SEC-019; SEC-028; SEC-040",
+      "exception_policy": "POL-003",
+      "qualification_status": "not_executed"
+    },
+    {
+      "id": "POL-022",
+      "title": "Incident response and disclosure",
+      "owner_role": "Incident Commander",
+      "enforcement_points": [
+        "SIEM",
+        "containment",
+        "communication gateway"
+      ],
+      "required_behavior": "Classify incident, preserve evidence, contain within delegated runbooks and track applicable notification clocks.",
+      "deny_rule": "Deny concealment, evidence destruction and autonomous external legal statements outside authority.",
+      "approval_rule": "Legal/privacy/customer authority approves required notices; emergency containment follows preapproved bounds.",
+      "negative_test": "Simulate tenant leak and failed audit sink; containment and escalation execute with preserved chronology.",
+      "baseline_trace": "SEC-035..038",
+      "exception_policy": "POL-003",
+      "qualification_status": "not_executed"
+    },
+    {
+      "id": "POL-023",
+      "title": "Business continuity and disaster recovery",
+      "owner_role": "COO / SRE",
+      "enforcement_points": [
+        "backup",
+        "restore",
+        "failover",
+        "continuity workflow"
+      ],
+      "required_behavior": "Maintain tested tenant-aware backups, RPO/RTO, dependency recovery and continuity roles.",
+      "deny_rule": "Deny unsupported recovery claims and restoration into unauthorized tenant/region.",
+      "approval_rule": "Business/SRE owner accepts drill results and material failover scope.",
+      "negative_test": "Restore isolated tenant from signed backup and reconcile external side effects.",
+      "baseline_trace": "SEC-038; TEN-013",
+      "exception_policy": "POL-003",
+      "qualification_status": "not_executed"
+    },
+    {
+      "id": "POL-024",
+      "title": "Payment and ledger integrity",
+      "owner_role": "Payment Product Owner / Finance Controller",
+      "enforcement_points": [
+        "payment API",
+        "ledger",
+        "authorization and reconciliation services"
+      ],
+      "required_behavior": "Use deterministic amount/currency/state/idempotency/authorization/reconciliation controls and auditable corrections.",
+      "deny_rule": "Deny LLM alteration of balances, final transaction authority or duplicate/unauthorized transfers.",
+      "approval_rule": "Human/payment authority sets rules and exceptions through controlled configuration.",
+      "negative_test": "Duplicate out-of-order payment and timeout leave correct single financial effect and reconcilable state.",
+      "baseline_trace": "BNK domain requirements",
+      "exception_policy": "POL-003",
+      "qualification_status": "not_executed"
+    },
+    {
+      "id": "POL-025",
+      "title": "ISO 20022 and SWIFT message conformance",
+      "owner_role": "Payments Architect / Messaging Owner",
+      "enforcement_points": [
+        "schema/profile registry",
+        "message gateway"
+      ],
+      "required_behavior": "Pin message identifiers, schema/code-set hashes, scheme usage rules, version translations and lifecycle semantics.",
+      "deny_rule": "Deny generic ISO-compliant claims based only on XSD and reject unsupported profile/message combinations.",
+      "approval_rule": "Domain/network owner approves exact profile and migration; actual network admission remains separate.",
+      "negative_test": "Schema-valid message violating usage rule fails semantic gate; round-trip preserves mandatory meaning.",
+      "baseline_trace": "STD-007..008",
+      "exception_policy": "POL-003",
+      "qualification_status": "not_executed"
+    },
+    {
+      "id": "POL-026",
+      "title": "AML fraud and KYC decision support",
+      "owner_role": "MLRO / Financial Crime Owner",
+      "enforcement_points": [
+        "case engine",
+        "model gateway",
+        "reporting gateway"
+      ],
+      "required_behavior": "Record source data, model indicators, explanations, evidence and authorized decision thresholds; retain accountable reporting authority.",
+      "deny_rule": "Deny fabricated identity evidence, autonomous suppression/disclosure of regulated reports and unapproved adverse action.",
+      "approval_rule": "Authorized financial-crime officer controls escalations/reports and approves automation within lawful bounds.",
+      "negative_test": "Model suggests closing suspicious case without required evidence; case remains pending accountable decision.",
+      "baseline_trace": "BNK-026; STD-012",
+      "exception_policy": "POL-003",
+      "qualification_status": "not_executed"
+    },
+    {
+      "id": "POL-027",
+      "title": "Tokenization and asset rights",
+      "owner_role": "Legal / Tokenization Product Owner",
+      "enforcement_points": [
+        "token issuance",
+        "redemption",
+        "custody",
+        "identity gateway"
+      ],
+      "required_behavior": "Separate data tokens from legal asset tokens; bind issuance/redemption to rights, custody, consent and reconciliation profile.",
+      "deny_rule": "Deny claims that tokenization alone creates legal ownership, anonymization or authorization.",
+      "approval_rule": "Legal/customer authority approves rights/jurisdiction/custody model before enabled asset transactions.",
+      "negative_test": "Revoke KYC token and attempt reuse; access denied while required audit retained.",
+      "baseline_trace": "STD-004; BNK domain requirements",
+      "exception_policy": "POL-003",
+      "qualification_status": "not_executed"
+    },
+    {
+      "id": "POL-028",
+      "title": "AI solution lifecycle and model risk",
+      "owner_role": "AI Risk Officer",
+      "enforcement_points": [
+        "dataset registry",
+        "training/evaluation",
+        "inference rollout"
+      ],
+      "required_behavior": "Document intended use, dataset rights/lineage, bias, robustness, drift, explainability and human recourse.",
+      "deny_rule": "Deny deployment beyond evaluated population/use and uncontrolled retraining or threshold changes.",
+      "approval_rule": "High-risk use-case owner approves measured risk and oversight before activation.",
+      "negative_test": "Shift input population; drift triggers bounded fallback and review rather than silent continuation.",
+      "baseline_trace": "STD-005..006; QEV-001",
+      "exception_policy": "POL-003",
+      "qualification_status": "not_executed"
+    },
+    {
+      "id": "POL-029",
+      "title": "Customer and voice communications",
+      "owner_role": "Customer Service / Privacy",
+      "enforcement_points": [
+        "CRM",
+        "outbound dialer",
+        "messaging"
+      ],
+      "required_behavior": "Follow identity verification, channel consent, approved disclosures, escalation and recording rules.",
+      "deny_rule": "Deny agent impersonation, unapproved promises, sensitive data disclosure and unauthorized marketing calls.",
+      "approval_rule": "Human approves commitments, regulated advice and disputed/high-impact outcomes.",
+      "negative_test": "Caller social-engineers account data or requests unapproved refund; verification and escalation block action.",
+      "baseline_trace": "STD-003; SVC requirements",
+      "exception_policy": "POL-003",
+      "qualification_status": "not_executed"
+    },
+    {
+      "id": "POL-030",
+      "title": "Lead acquisition and sales contracts",
+      "owner_role": "CEO / Sales / Legal",
+      "enforcement_points": [
+        "lead ingestion",
+        "CRM",
+        "offer/signature gateway"
+      ],
+      "required_behavior": "Discover leads within allowed sources and record provenance, consent and fit; delivery begins from authorized contract.",
+      "deny_rule": "Deny unauthorized outreach, scraping violations, invented references and autonomous binding contract signature.",
+      "approval_rule": "Founder/customer-authorized humans approve external commitments, pricing exceptions and contracts.",
+      "negative_test": "Agent converts speculative lead into active engagement without signed scope; admission fails.",
+      "baseline_trace": "SVC-003; GOV-012",
+      "exception_policy": "POL-003",
+      "qualification_status": "not_executed"
+    },
+    {
+      "id": "POL-031",
+      "title": "Finance procurement and expenditure",
+      "owner_role": "CFO / Procurement",
+      "enforcement_points": [
+        "budget service",
+        "purchasing",
+        "invoice and bank gateway"
+      ],
+      "required_behavior": "Track budget/reservation/actual spend, procurement authority, vendor checks, invoices and reconciliation.",
+      "deny_rule": "Deny unapproved subscriptions/purchases, split-order limit evasion and autonomous bank transfers.",
+      "approval_rule": "Human financial authority approves spend above delegated bound and money movement.",
+      "negative_test": "Parallel agents exhaust shared budget; atomic reservation prevents overspend.",
+      "baseline_trace": "GOV-014; platform metering requirements",
+      "exception_policy": "POL-003",
+      "qualification_status": "not_executed"
+    },
+    {
+      "id": "POL-032",
+      "title": "People competence and worker lifecycle",
+      "owner_role": "COO / HR",
+      "enforcement_points": [
+        "role assignment",
+        "training",
+        "offboarding"
+      ],
+      "required_behavior": "Maintain competence evidence for human/AI/hybrid assignments and timely access revocation.",
+      "deny_rule": "Deny assigning vacant regulated offices or expired qualification as competent coverage.",
+      "approval_rule": "Accountable office owner accepts competence; HR handles human employment decisions.",
+      "negative_test": "Expired reviewer qualification prevents high-risk assignment; departure revokes credentials.",
+      "baseline_trace": "ORG requirements",
+      "exception_policy": "POL-003",
+      "qualification_status": "not_executed"
+    },
+    {
+      "id": "POL-033",
+      "title": "IP confidentiality and lawful standards use",
+      "owner_role": "Legal / Knowledge Owner",
+      "enforcement_points": [
+        "retrieval",
+        "export",
+        "license scanner"
+      ],
+      "required_behavior": "Track customer ownership, copyrighted source permissions, attribution and confidential work boundaries.",
+      "deny_rule": "Deny unlicensed standard redistribution and cross-customer reuse of protected code/data.",
+      "approval_rule": "Legal owner approves reuse, licensing and publication boundaries.",
+      "negative_test": "Licensed ISO text requested in public skill export; export excludes restricted content.",
+      "baseline_trace": "GOV-006; SVC-008",
+      "exception_policy": "POL-003",
+      "qualification_status": "not_executed"
+    },
+    {
+      "id": "POL-034",
+      "title": "Accessibility and inclusive design",
+      "owner_role": "Accessibility Lead / Product Owner",
+      "enforcement_points": [
+        "design review",
+        "test",
+        "release gate"
+      ],
+      "required_behavior": "Pin applicable accessibility profile; combine automated checks with keyboard, assistive technology and human task tests.",
+      "deny_rule": "Deny conformance claims from automation alone and unresolved mandatory accessibility failures.",
+      "approval_rule": "Product/legal owner resolves applicability and documented equivalent access where lawful.",
+      "negative_test": "Screen-reader/keyboard completion test fails despite clean scanner; release gate remains failed.",
+      "baseline_trace": "STD-013",
+      "exception_policy": "POL-003",
+      "qualification_status": "not_executed"
+    },
+    {
+      "id": "POL-035",
+      "title": "Architecture technology and portability",
+      "owner_role": "Enterprise Architect",
+      "enforcement_points": [
+        "architecture review",
+        "adapter qualification",
+        "build"
+      ],
+      "required_behavior": "Use provider-neutral role/task contracts and versioned language/framework/database/deployment profiles.",
+      "deny_rule": "Deny marketing unsupported ports and assuming MCP makes incompatible models equivalent.",
+      "approval_rule": "Architecture owner approves dependencies and portability tradeoffs with evidence.",
+      "negative_test": "Change Java/Oracle/harness profile; contract tests identify affected qualifications.",
+      "baseline_trace": "LLM-001; TEN-006; ENG requirements",
+      "exception_policy": "POL-003",
+      "qualification_status": "not_executed"
+    },
+    {
+      "id": "POL-036",
+      "title": "Feedback and controlled improvement",
+      "owner_role": "Capability Governance / Quality",
+      "enforcement_points": [
+        "feedback intake",
+        "change registry",
+        "qualification gate"
+      ],
+      "required_behavior": "Convert experience and human feedback into traceable proposals, independent review, evaluation and canary versions.",
+      "deny_rule": "Deny direct self-modification of released skills, policies, standards, gates or evaluators.",
+      "approval_rule": "Designated owner approves promotion after independent evidence and rollback readiness.",
+      "negative_test": "Agent edits policy in response to failure; released policy stays unchanged and proposal is recorded.",
+      "baseline_trace": "AGT-022; FBK-004",
+      "exception_policy": "POL-003",
+      "qualification_status": "not_executed"
+    },
+    {
+      "id": "POL-037",
+      "title": "Records retention and customer lifecycle",
+      "owner_role": "Records Manager / Privacy",
+      "enforcement_points": [
+        "retention engine",
+        "export",
+        "offboarding"
+      ],
+      "required_behavior": "Apply class-specific retention, legal hold, deletion, export and key destruction with customer evidence.",
+      "deny_rule": "Deny blanket delete that violates hold and indefinite sensitive retention without basis.",
+      "approval_rule": "Legal/privacy owner resolves retention conflicts and authorized offboarding.",
+      "negative_test": "Offboard held tenant; access ends, held records remain protected and nonheld data deletion is evidenced.",
+      "baseline_trace": "TEN-013; SEC-030",
+      "exception_policy": "POL-003",
+      "qualification_status": "not_executed"
+    },
+    {
+      "id": "POL-038",
+      "title": "Independent assurance and truthful claims",
+      "owner_role": "Internal Audit / Legal",
+      "enforcement_points": [
+        "report publication",
+        "sales claims",
+        "attestation workflow"
+      ],
+      "required_behavior": "Disclose author/reviewer/provider provenance, limits, self-approval and actual certification scope.",
+      "deny_rule": "Deny claiming four-model item review, CMMI Level5, certification or independent audit without evidence.",
+      "approval_rule": "Named qualified assessor/human approves claims within their authority.",
+      "negative_test": "Generate compliance badge from scan success; publication denied absent actual authority/evidence.",
+      "baseline_trace": "GOV-013; SVC-016",
+      "exception_policy": "POL-003",
+      "qualification_status": "not_executed"
+    },
+    {
+      "id": "POL-039",
+      "title": "Service module and deployment qualification",
+      "owner_role": "Service Owner / SRE",
+      "enforcement_points": [
+        "module registry",
+        "tenant enablement",
+        "release gate"
+      ],
+      "required_behavior": "Track release, implemented, validated, exercised, enabled and supported scope per module/topology.",
+      "deny_rule": "Deny enabling unqualified paths while preserving full release requirements and visible gaps.",
+      "approval_rule": "Service/customer owner accepts qualified service profile before commercial use.",
+      "negative_test": "QAaaS enabled on new private-cloud topology without evidence; admission denied.",
+      "baseline_trace": "PLT-023; TEN-004..005",
+      "exception_policy": "POL-003",
+      "qualification_status": "not_executed"
+    },
+    {
+      "id": "POL-040",
+      "title": "Council adjudication and dissent",
+      "owner_role": "Governance Owner",
+      "enforcement_points": [
+        "council orchestrator",
+        "decision registry"
+      ],
+      "required_behavior": "Collect independent initial opinions, evidence-based challenge, conflicts and explicit dispositions using qualified model seats.",
+      "deny_rule": "Deny majority vote overriding evidence, policy or human authority; do not expose hidden chain-of-thought as audit requirement.",
+      "approval_rule": "Accountable decision owner accepts material decisions and unresolved risk; council recommends.",
+      "negative_test": "Three models agree on false source; authoritative evidence wins and dissent is retained.",
+      "baseline_trace": "GOV-019; COL requirements",
+      "exception_policy": "POL-003",
+      "qualification_status": "not_executed"
+    }
+  ]
+}

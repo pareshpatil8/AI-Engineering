@@ -1,0 +1,1235 @@
+{
+  "packages": [
+    {
+      "id": "G01",
+      "version": "1.0.0",
+      "name": "Strategy and operating model",
+      "domain_reference": "Define vision, strategy, value model, operating model, OKRs, portfolio choices, business case, decision record.",
+      "skill_ids": [
+        "SK-G01-01",
+        "SK-G01-02",
+        "SK-G01-03",
+        "SK-G01-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "G02",
+      "version": "1.0.0",
+      "name": "Board and corporate governance",
+      "domain_reference": "Board packs, governance calendar, delegations, committees, conflicts, policy approval, accountable decisions.",
+      "skill_ids": [
+        "SK-G02-01",
+        "SK-G02-02",
+        "SK-G02-03",
+        "SK-G02-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "G03",
+      "version": "1.0.0",
+      "name": "Enterprise risk and compliance",
+      "domain_reference": "Risk taxonomy, assessment, control mapping, obligations, exceptions, residual-risk evidence, compliance monitoring.",
+      "skill_ids": [
+        "SK-G03-01",
+        "SK-G03-02",
+        "SK-G03-03"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "G04",
+      "version": "1.0.0",
+      "name": "Legal, privacy, and regulatory interpretation",
+      "domain_reference": "Legal issue spotting, applicability, contract/privacy review, regulatory-change impact; human legal decisions.",
+      "skill_ids": [
+        "SK-G04-01",
+        "SK-G04-02",
+        "SK-G04-03",
+        "SK-G04-04",
+        "SK-G04-05"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "G05",
+      "version": "1.0.0",
+      "name": "Audit, evidence, and assurance",
+      "domain_reference": "Evidence design, traceability, control tests, sampling, findings, remediation, independent review, audit packs.",
+      "skill_ids": [
+        "SK-G05-01",
+        "SK-G05-02",
+        "SK-G05-03"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "G06",
+      "version": "1.0.0",
+      "name": "Finance, procurement, and vendor governance",
+      "domain_reference": "Budget, forecast, unit economics, procurement, outsourcing, vendor risk, contracts, invoices, financial controls.",
+      "skill_ids": [
+        "SK-G06-01",
+        "SK-G06-02",
+        "SK-G06-03",
+        "SK-G06-04",
+        "SK-G06-05"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "G07",
+      "version": "1.0.0",
+      "name": "Workforce, ethics, and competence",
+      "domain_reference": "Workforce planning, role design, hiring support, learning, competence, performance, conduct, workplace policy.",
+      "skill_ids": [
+        "SK-G07-01",
+        "SK-G07-02",
+        "SK-G07-03",
+        "SK-G07-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "A01",
+      "version": "1.0.0",
+      "name": "Role, authority, and segregation",
+      "domain_reference": "Role contracts, RACI/decision rights, delegation, least privilege, incompatibility and segregation checks.",
+      "skill_ids": [
+        "SK-A01-01",
+        "SK-A01-02",
+        "SK-A01-03"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "A02",
+      "version": "1.0.0",
+      "name": "Planning and decomposition",
+      "domain_reference": "Goal-linked planning, estimation, dependency mapping, task decomposition, assignment, prioritization.",
+      "skill_ids": [
+        "SK-A02-01",
+        "SK-A02-02",
+        "SK-A02-03"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "A03",
+      "version": "1.0.0",
+      "name": "Multi-agent collaboration",
+      "domain_reference": "Context handoff, work leases, parallel coordination, conflict resolution, consensus with dissent, integration.",
+      "skill_ids": [
+        "SK-A03-01",
+        "SK-A03-02",
+        "SK-A03-03",
+        "SK-A03-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "A04",
+      "version": "1.0.0",
+      "name": "Human-in-loop and escalation",
+      "domain_reference": "Approval request, preview, risk summary, exception, blocker escalation, fallback, appeal.",
+      "skill_ids": [
+        "SK-A04-01",
+        "SK-A04-02",
+        "SK-A04-03"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "A05",
+      "version": "1.0.0",
+      "name": "Context and memory",
+      "domain_reference": "Context selection, redaction, provenance, summarization, durable memory, expiry, contamination prevention.",
+      "skill_ids": [
+        "SK-A05-01",
+        "SK-A05-02",
+        "SK-A05-03",
+        "SK-A05-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "A06",
+      "version": "1.0.0",
+      "name": "Agent evaluation and observability",
+      "domain_reference": "Role scenarios, activation tests, behavior evals, runtime comparison, agent telemetry, performance review.",
+      "skill_ids": [
+        "SK-A06-01",
+        "SK-A06-02",
+        "SK-A06-03",
+        "SK-A06-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "A07",
+      "version": "1.0.0",
+      "name": "Controlled learning",
+      "domain_reference": "Feedback analysis, root-cause analysis, change proposal, experiment, regression, canary, rollback.",
+      "skill_ids": [
+        "SK-A07-01",
+        "SK-A07-02",
+        "SK-A07-03",
+        "SK-A07-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "A08",
+      "version": "1.0.0",
+      "name": "Agent safety and security",
+      "domain_reference": "Injection defense, tool safety, authority boundary, data loss prevention, sandboxing, kill switch, incident response.",
+      "skill_ids": [
+        "SK-A08-01",
+        "SK-A08-02",
+        "SK-A08-03"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "P01",
+      "version": "1.0.0",
+      "name": "Product discovery and research",
+      "domain_reference": "Problem framing, user/stakeholder research, market/competitor research, opportunity analysis, service blueprint.",
+      "skill_ids": [
+        "SK-P01-01",
+        "SK-P01-02",
+        "SK-P01-03",
+        "SK-P01-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "P02",
+      "version": "1.0.0",
+      "name": "Product strategy and management",
+      "domain_reference": "Vision, strategy, outcomes, roadmap, prioritization, pricing, lifecycle, portfolio and product reviews.",
+      "skill_ids": [
+        "SK-P02-01",
+        "SK-P02-02",
+        "SK-P02-03"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "P03",
+      "version": "1.0.0",
+      "name": "Business analysis and requirements",
+      "domain_reference": "Elicitation, process/rule/data modeling, stories/use cases, NFRs, acceptance, traceability, impact/change.",
+      "skill_ids": [
+        "SK-P03-01",
+        "SK-P03-02",
+        "SK-P03-03",
+        "SK-P03-04",
+        "SK-P03-05"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "P04",
+      "version": "1.0.0",
+      "name": "Delivery and programme management",
+      "domain_reference": "Release/sprint planning, dependency/risk, status, benefits, governance, RAID, stakeholder communication.",
+      "skill_ids": [
+        "SK-P04-01",
+        "SK-P04-02",
+        "SK-P04-03"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "P05",
+      "version": "1.0.0",
+      "name": "UX, UI, and service design",
+      "domain_reference": "Information architecture, journeys, prototypes, interaction/visual design, design system, usability.",
+      "skill_ids": [
+        "SK-P05-01",
+        "SK-P05-02",
+        "SK-P05-03",
+        "SK-P05-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "P06",
+      "version": "1.0.0",
+      "name": "Content, documentation, and localization",
+      "domain_reference": "UX content, technical writing, regulated disclosures, knowledge articles, localization and terminology.",
+      "skill_ids": [
+        "SK-P06-01",
+        "SK-P06-02",
+        "SK-P06-03",
+        "SK-P06-04",
+        "SK-P06-05"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "P07",
+      "version": "1.0.0",
+      "name": "Accessibility engineering",
+      "domain_reference": "Accessible design, WCAG/application mapping, assistive technology, audit, remediation and conformance evidence.",
+      "skill_ids": [
+        "SK-P07-01",
+        "SK-P07-02",
+        "SK-P07-03"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "R01",
+      "version": "1.0.0",
+      "name": "Enterprise architecture",
+      "domain_reference": "Capability/business/application/data/technology architecture, principles, standards, roadmaps, portfolio conformance.",
+      "skill_ids": [
+        "SK-R01-01",
+        "SK-R01-02",
+        "SK-R01-03"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "R02",
+      "version": "1.0.0",
+      "name": "Solution and technical architecture",
+      "domain_reference": "Drivers, context, domains, modules/services, APIs, deployment, decisions, HLD/LLD, conformance.",
+      "skill_ids": [
+        "SK-R02-01",
+        "SK-R02-02",
+        "SK-R02-03",
+        "SK-R02-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "R03",
+      "version": "1.0.0",
+      "name": "Security and privacy architecture",
+      "domain_reference": "Threat model, trust boundaries, zero trust, IAM, cryptography, data protection, abuse cases and controls.",
+      "skill_ids": [
+        "SK-R03-01",
+        "SK-R03-02",
+        "SK-R03-03",
+        "SK-R03-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "R04",
+      "version": "1.0.0",
+      "name": "Data architecture",
+      "domain_reference": "Data domains, models, contracts, lineage, storage, quality, retention, analytics and migration.",
+      "skill_ids": [
+        "SK-R04-01",
+        "SK-R04-02",
+        "SK-R04-03",
+        "SK-R04-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "R05",
+      "version": "1.0.0",
+      "name": "Integration and messaging architecture",
+      "domain_reference": "API/event/file patterns, ISO semantics, schema governance, routing, reliability, reconciliation.",
+      "skill_ids": [
+        "SK-R05-01",
+        "SK-R05-02",
+        "SK-R05-03"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "R06",
+      "version": "1.0.0",
+      "name": "Cloud and platform architecture",
+      "domain_reference": "Landing zones, multi-tenancy, containers, orchestration, networks, observability, resilience, deployment topology.",
+      "skill_ids": [
+        "SK-R06-01",
+        "SK-R06-02",
+        "SK-R06-03"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "R07",
+      "version": "1.0.0",
+      "name": "AI and agent architecture",
+      "domain_reference": "AI use-case architecture, RAG, model/tool orchestration, guardrails, memory, evaluation and human oversight.",
+      "skill_ids": [
+        "SK-R07-01",
+        "SK-R07-02",
+        "SK-R07-03",
+        "SK-R07-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "R08",
+      "version": "1.0.0",
+      "name": "Performance and resilience architecture",
+      "domain_reference": "Capacity, scalability, HA, DR, queueing, caching, consistency, failure modes, performance budgets.",
+      "skill_ids": [
+        "SK-R08-01",
+        "SK-R08-02",
+        "SK-R08-03",
+        "SK-R08-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "E01",
+      "version": "1.0.0",
+      "name": "Java and Spring engineering",
+      "domain_reference": "Java domain logic, Spring services, security, data, transactions, messaging, concurrency, resilience and tests.",
+      "skill_ids": [
+        "SK-E01-01",
+        "SK-E01-02",
+        "SK-E01-03",
+        "SK-E01-04",
+        "SK-E01-05"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "E02",
+      "version": "1.0.0",
+      "name": "Angular engineering",
+      "domain_reference": "Angular architecture, components, state, forms, HTTP, security, accessibility, performance and tests.",
+      "skill_ids": [
+        "SK-E02-01",
+        "SK-E02-02",
+        "SK-E02-03",
+        "SK-E02-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "E03",
+      "version": "1.0.0",
+      "name": "Oracle and PL/SQL engineering",
+      "domain_reference": "Secure SQL/PLSQL, schema, packages, transactions, bulk operations, indexing, partitioning, migration and tuning.",
+      "skill_ids": [
+        "SK-E03-01",
+        "SK-E03-02",
+        "SK-E03-03",
+        "SK-E03-04",
+        "SK-E03-05"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "E04",
+      "version": "1.0.0",
+      "name": "API engineering",
+      "domain_reference": "OpenAPI, REST/gRPC/GraphQL profiles, validation, authn/authz, idempotency, errors, versioning and contract tests.",
+      "skill_ids": [
+        "SK-E04-01",
+        "SK-E04-02",
+        "SK-E04-03",
+        "SK-E04-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "E05",
+      "version": "1.0.0",
+      "name": "Event and message engineering",
+      "domain_reference": "Kafka, MQ, Artemis, schemas, ordering, delivery, retry/DLQ, replay, backpressure, security and DR.",
+      "skill_ids": [
+        "SK-E05-01",
+        "SK-E05-02",
+        "SK-E05-03",
+        "SK-E05-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "E06",
+      "version": "1.0.0",
+      "name": "DevOps and CI/CD",
+      "domain_reference": "Source workflows, pipelines, build, test, scan, sign, promote, deploy, rollback and developer experience.",
+      "skill_ids": [
+        "SK-E06-01",
+        "SK-E06-02",
+        "SK-E06-03",
+        "SK-E06-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "E07",
+      "version": "1.0.0",
+      "name": "Infrastructure and platform engineering",
+      "domain_reference": "IaC, cloud/on-prem, containers, Kubernetes/OpenShift, networks, secrets, policy, autoscaling and operations.",
+      "skill_ids": [
+        "SK-E07-01",
+        "SK-E07-02",
+        "SK-E07-03",
+        "SK-E07-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "E08",
+      "version": "1.0.0",
+      "name": "Database engineering and administration",
+      "domain_reference": "Database design, security, backup, recovery, HA, capacity, performance, patching, monitoring and support.",
+      "skill_ids": [
+        "SK-E08-01",
+        "SK-E08-02",
+        "SK-E08-03",
+        "SK-E08-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "E09",
+      "version": "1.0.0",
+      "name": "Mobile and channel engineering",
+      "domain_reference": "Mobile/PWA, secure storage, device/channel integration, offline sync, release and mobile testing.",
+      "skill_ids": [
+        "SK-E09-01",
+        "SK-E09-02",
+        "SK-E09-03"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "E10",
+      "version": "1.0.0",
+      "name": "Enterprise integration engineering",
+      "domain_reference": "Camel/ESB, SOAP/REST, SFTP/files, partner integration, transformation, routing and reconciliation.",
+      "skill_ids": [
+        "SK-E10-01",
+        "SK-E10-02",
+        "SK-E10-03"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "D01",
+      "version": "1.0.0",
+      "name": "Data governance and quality",
+      "domain_reference": "Ownership, classification, catalog, contracts, lineage, quality, privacy, retention and access.",
+      "skill_ids": [
+        "SK-D01-01",
+        "SK-D01-02",
+        "SK-D01-03",
+        "SK-D01-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "D02",
+      "version": "1.0.0",
+      "name": "Data engineering and analytics",
+      "domain_reference": "Ingestion, batch/stream, transformation, warehouse/lakehouse, BI, controls, observability and reconciliation.",
+      "skill_ids": [
+        "SK-D02-01",
+        "SK-D02-02",
+        "SK-D02-03"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "D03",
+      "version": "1.0.0",
+      "name": "Data science and model development",
+      "domain_reference": "Problem formulation, exploration, features, training, experiments, metrics, explainability and model cards.",
+      "skill_ids": [
+        "SK-D03-01",
+        "SK-D03-02",
+        "SK-D03-03",
+        "SK-D03-04",
+        "SK-D03-05"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "D04",
+      "version": "1.0.0",
+      "name": "MLOps and AI platform",
+      "domain_reference": "Feature/model/prompt registries, pipelines, deployment, monitoring, drift, rollback and cost.",
+      "skill_ids": [
+        "SK-D04-01",
+        "SK-D04-02",
+        "SK-D04-03",
+        "SK-D04-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "D05",
+      "version": "1.0.0",
+      "name": "Independent model validation",
+      "domain_reference": "Conceptual soundness, data, performance, robustness, bias, explainability, monitoring and challenge.",
+      "skill_ids": [
+        "SK-D05-01",
+        "SK-D05-02",
+        "SK-D05-03",
+        "SK-D05-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "D06",
+      "version": "1.0.0",
+      "name": "GenAI, RAG, and conversational AI",
+      "domain_reference": "Prompt/context design, retrieval, grounding, agents, speech, evaluation, content safety and handoff.",
+      "skill_ids": [
+        "SK-D06-01",
+        "SK-D06-02",
+        "SK-D06-03",
+        "SK-D06-04",
+        "SK-D06-05"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "D07",
+      "version": "1.0.0",
+      "name": "Responsible AI and model risk",
+      "domain_reference": "AI inventory, impact/risk, ISO/NIST/RBI mapping, fairness, transparency, human oversight and governance.",
+      "skill_ids": [
+        "SK-D07-01",
+        "SK-D07-02",
+        "SK-D07-03",
+        "SK-D07-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "Q01",
+      "version": "1.0.0",
+      "name": "Functional quality engineering",
+      "domain_reference": "Strategy, scenarios, positive/negative/boundary/state tests, defects, regression and evidence.",
+      "skill_ids": [
+        "SK-Q01-01",
+        "SK-Q01-02",
+        "SK-Q01-03",
+        "SK-Q01-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "Q02",
+      "version": "1.0.0",
+      "name": "UI automation",
+      "domain_reference": "Selenium/Playwright design, fixtures, selectors, waits, parallelism, trace, flake control and CI.",
+      "skill_ids": [
+        "SK-Q02-01",
+        "SK-Q02-02",
+        "SK-Q02-03",
+        "SK-Q02-04",
+        "SK-Q02-05"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "Q03",
+      "version": "1.0.0",
+      "name": "API and contract testing",
+      "domain_reference": "Schema/contract, auth, negative, compatibility, idempotency, concurrency, fuzz and integration tests.",
+      "skill_ids": [
+        "SK-Q03-01",
+        "SK-Q03-02",
+        "SK-Q03-03",
+        "SK-Q03-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "Q04",
+      "version": "1.0.0",
+      "name": "Performance testing",
+      "domain_reference": "JMeter/equivalent workloads, correlation, pacing, load, stress, spike, endurance, failover and reporting.",
+      "skill_ids": [
+        "SK-Q04-01",
+        "SK-Q04-02",
+        "SK-Q04-03",
+        "SK-Q04-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "Q05",
+      "version": "1.0.0",
+      "name": "Performance engineering",
+      "domain_reference": "Capacity models, profiling, JVM/database/client tuning, bottleneck removal and before/after evidence.",
+      "skill_ids": [
+        "SK-Q05-01",
+        "SK-Q05-02",
+        "SK-Q05-03"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "Q06",
+      "version": "1.0.0",
+      "name": "Accessibility testing",
+      "domain_reference": "Automated, keyboard, screen reader, zoom/reflow, contrast, semantics, mobile and document tests.",
+      "skill_ids": [
+        "SK-Q06-01",
+        "SK-Q06-02",
+        "SK-Q06-03",
+        "SK-Q06-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "Q07",
+      "version": "1.0.0",
+      "name": "Security testing",
+      "domain_reference": "SAST/SCA/DAST, secrets, API, fuzz, container/IaC, VAPT, abuse and adversarial tests.",
+      "skill_ids": [
+        "SK-Q07-01",
+        "SK-Q07-02",
+        "SK-Q07-03",
+        "SK-Q07-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "Q08",
+      "version": "1.0.0",
+      "name": "UAT and business acceptance",
+      "domain_reference": "Business scenarios, production-like data/process, user acceptance, traceability and sign-off.",
+      "skill_ids": [
+        "SK-Q08-01",
+        "SK-Q08-02",
+        "SK-Q08-03"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "Q09",
+      "version": "1.0.0",
+      "name": "Quality governance and review",
+      "domain_reference": "Quality policy, review, metrics, audit, release recommendation, defect prevention and test assurance.",
+      "skill_ids": [
+        "SK-Q09-01",
+        "SK-Q09-02",
+        "SK-Q09-03",
+        "SK-Q09-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "S01",
+      "version": "1.0.0",
+      "name": "Security governance and cyber risk",
+      "domain_reference": "ISMS, policy, risk, controls, metrics, exceptions, regulatory mapping and assurance.",
+      "skill_ids": [
+        "SK-S01-01",
+        "SK-S01-02",
+        "SK-S01-03"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "S02",
+      "version": "1.0.0",
+      "name": "SSDLC and application security",
+      "domain_reference": "Secure requirements/design/coding, threat model, code review, pipeline gates and developer guidance.",
+      "skill_ids": [
+        "SK-S02-01",
+        "SK-S02-02",
+        "SK-S02-03"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "S03",
+      "version": "1.0.0",
+      "name": "VAPT and offensive assurance",
+      "domain_reference": "Authorized scope, reconnaissance, validation, exploitation bounds, evidence, reporting and retest.",
+      "skill_ids": [
+        "SK-S03-01",
+        "SK-S03-02",
+        "SK-S03-03",
+        "SK-S03-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "S04",
+      "version": "1.0.0",
+      "name": "Cloud, container, and infrastructure security",
+      "domain_reference": "Cloud/IaC/container/Kubernetes/network configuration, posture, runtime and incident controls.",
+      "skill_ids": [
+        "SK-S04-01",
+        "SK-S04-02",
+        "SK-S04-03"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "S05",
+      "version": "1.0.0",
+      "name": "IAM, PAM, PKI, and cryptography",
+      "domain_reference": "Identity lifecycle, federation, authorization, privileged access, keys, certificates, HSM and crypto agility.",
+      "skill_ids": [
+        "SK-S05-01",
+        "SK-S05-02",
+        "SK-S05-03",
+        "SK-S05-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "S06",
+      "version": "1.0.0",
+      "name": "SOC, detection, and incident response",
+      "domain_reference": "Logging, SIEM, detections, triage, investigation, containment, recovery, forensics and post-incident review.",
+      "skill_ids": [
+        "SK-S06-01",
+        "SK-S06-02",
+        "SK-S06-03",
+        "SK-S06-04",
+        "SK-S06-05"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "S07",
+      "version": "1.0.0",
+      "name": "Threat intelligence and vulnerability management",
+      "domain_reference": "Advisories, asset/SBOM impact, prioritization, patching, exposure, hunting and remediation.",
+      "skill_ids": [
+        "SK-S07-01",
+        "SK-S07-02",
+        "SK-S07-03",
+        "SK-S07-04",
+        "SK-S07-05"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "S08",
+      "version": "1.0.0",
+      "name": "Privacy engineering",
+      "domain_reference": "DPIA, privacy requirements, minimization, consent, rights, tokenization, retention and breach response.",
+      "skill_ids": [
+        "SK-S08-01",
+        "SK-S08-02",
+        "SK-S08-03",
+        "SK-S08-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "S09",
+      "version": "1.0.0",
+      "name": "AI and agent security",
+      "domain_reference": "Model/agent threat modeling, injection, poisoning, extraction, tool abuse, memory, red team and guardrails.",
+      "skill_ids": [
+        "SK-S09-01",
+        "SK-S09-02",
+        "SK-S09-03",
+        "SK-S09-04",
+        "SK-S09-05"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "S10",
+      "version": "1.0.0",
+      "name": "Software supply-chain security",
+      "domain_reference": "SBOM, provenance, signing, dependency/license risk, build integrity, releases and third parties.",
+      "skill_ids": [
+        "SK-S10-01",
+        "SK-S10-02",
+        "SK-S10-03",
+        "SK-S10-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "B01",
+      "version": "1.0.0",
+      "name": "Core banking and financial accounting",
+      "domain_reference": "Accounts, balances, postings, interest/fees, limits, customer/product, EOD, accounting and controls.",
+      "skill_ids": [
+        "SK-B01-01",
+        "SK-B01-02",
+        "SK-B01-03",
+        "SK-B01-04",
+        "SK-B01-05"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "B02",
+      "version": "1.0.0",
+      "name": "Payments and UPI",
+      "domain_reference": "Payment lifecycle, UPI actors/flows, authorization, limits, risk, disputes, settlement and NPCI controls.",
+      "skill_ids": [
+        "SK-B02-01",
+        "SK-B02-02",
+        "SK-B02-03",
+        "SK-B02-04",
+        "SK-B02-05"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "B03",
+      "version": "1.0.0",
+      "name": "ISO 20022",
+      "domain_reference": "Repository, messages, schemas, BAH, code sets, usage variants, mapping, validation and testing.",
+      "skill_ids": [
+        "SK-B03-01",
+        "SK-B03-02",
+        "SK-B03-03",
+        "SK-B03-04",
+        "SK-B03-05"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "B04",
+      "version": "1.0.0",
+      "name": "SWIFT",
+      "domain_reference": "FIN/ISO messages, interfaces, CSP, approvals, screening, transmission, reconciliation and investigation.",
+      "skill_ids": [
+        "SK-B04-01",
+        "SK-B04-02",
+        "SK-B04-03",
+        "SK-B04-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "B05",
+      "version": "1.0.0",
+      "name": "Fraud and mule-risk management",
+      "domain_reference": "Signals, rules/models, graph/behavior, alert/action, cases, feedback, loss and friction measurement.",
+      "skill_ids": [
+        "SK-B05-01",
+        "SK-B05-02",
+        "SK-B05-03",
+        "SK-B05-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "B06",
+      "version": "1.0.0",
+      "name": "AML, sanctions, and financial crime",
+      "domain_reference": "KYC/CDD risk, monitoring, PEP/sanctions, cases, investigation, reporting evidence and confidentiality.",
+      "skill_ids": [
+        "SK-B06-01",
+        "SK-B06-02",
+        "SK-B06-03",
+        "SK-B06-04",
+        "SK-B06-05"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "B07",
+      "version": "1.0.0",
+      "name": "KYC and identity tokenization",
+      "domain_reference": "Identification/verification, CKYCR, beneficial owners, refresh, consent, data-vault tokens and reusable KYC.",
+      "skill_ids": [
+        "SK-B07-01",
+        "SK-B07-02",
+        "SK-B07-03",
+        "SK-B07-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "B08",
+      "version": "1.0.0",
+      "name": "Cheque and document clearing",
+      "domain_reference": "Image quality, extraction, risk indicators, duplicate/signature, clearing, returns and exceptions.",
+      "skill_ids": [
+        "SK-B08-01",
+        "SK-B08-02",
+        "SK-B08-03",
+        "SK-B08-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "B09",
+      "version": "1.0.0",
+      "name": "Asset tokenization and digital assets",
+      "domain_reference": "Legal classification, issuance, custody, transfer, smart contracts, settlement, lifecycle and reconciliation.",
+      "skill_ids": [
+        "SK-B09-01",
+        "SK-B09-02",
+        "SK-B09-03",
+        "SK-B09-04",
+        "SK-B09-05"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "B10",
+      "version": "1.0.0",
+      "name": "Clearing, settlement, disputes, and reconciliation",
+      "domain_reference": "Clearing files/messages, settlement, control totals, breaks, adjustments, disputes and audit.",
+      "skill_ids": [
+        "SK-B10-01",
+        "SK-B10-02",
+        "SK-B10-03",
+        "SK-B10-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "O01",
+      "version": "1.0.0",
+      "name": "SRE and observability",
+      "domain_reference": "SLOs, telemetry, alerting, capacity, toil, reliability, error budgets and service reviews.",
+      "skill_ids": [
+        "SK-O01-01",
+        "SK-O01-02",
+        "SK-O01-03",
+        "SK-O01-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "O02",
+      "version": "1.0.0",
+      "name": "IT service management",
+      "domain_reference": "Service catalogue, incident, problem, change, request, configuration, knowledge and SLA.",
+      "skill_ids": [
+        "SK-O02-01",
+        "SK-O02-02",
+        "SK-O02-03"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "O03",
+      "version": "1.0.0",
+      "name": "Production support",
+      "domain_reference": "L1/L2/L3 triage, diagnostics, safe remediation, data/message repair, escalation and handoff.",
+      "skill_ids": [
+        "SK-O03-01",
+        "SK-O03-02",
+        "SK-O03-03",
+        "SK-O03-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "O04",
+      "version": "1.0.0",
+      "name": "Customer support and success",
+      "domain_reference": "Omnichannel cases, knowledge, identity, complaints, escalation, quality, adoption and outcomes.",
+      "skill_ids": [
+        "SK-O04-01",
+        "SK-O04-02",
+        "SK-O04-03",
+        "SK-O04-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "O05",
+      "version": "1.0.0",
+      "name": "Voice operations",
+      "domain_reference": "Speech, disclosure, consent, identity, scripts, language, recording, opt-out, escalation and quality.",
+      "skill_ids": [
+        "SK-O05-01",
+        "SK-O05-02",
+        "SK-O05-03",
+        "SK-O05-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "O06",
+      "version": "1.0.0",
+      "name": "BCM and disaster recovery",
+      "domain_reference": "BIA, continuity strategy, RTO/RPO, DR plans, exercises, crisis and reconciliation.",
+      "skill_ids": [
+        "SK-O06-01",
+        "SK-O06-02",
+        "SK-O06-03",
+        "SK-O06-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "O07",
+      "version": "1.0.0",
+      "name": "FinOps and capacity economics",
+      "domain_reference": "Usage allocation, budgets, forecasting, unit cost, optimization, chargeback and anomaly detection.",
+      "skill_ids": [
+        "SK-O07-01",
+        "SK-O07-02",
+        "SK-O07-03",
+        "SK-O07-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "O08",
+      "version": "1.0.0",
+      "name": "Release and configuration management",
+      "domain_reference": "Release evidence, versions, change calendar, environment/configuration, deployment, rollback and revocation.",
+      "skill_ids": [
+        "SK-O08-01",
+        "SK-O08-02",
+        "SK-O08-03",
+        "SK-O08-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "C01",
+      "version": "1.0.0",
+      "name": "Sales and solution consulting",
+      "domain_reference": "Discovery, qualification, solution fit, demonstrations, value, risk and handoff.",
+      "skill_ids": [
+        "SK-C01-01",
+        "SK-C01-02",
+        "SK-C01-03",
+        "SK-C01-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "C02",
+      "version": "1.0.0",
+      "name": "Bid, contract, and commercial governance",
+      "domain_reference": "RFP, proposal, estimates, commitments, terms, scope, pricing, approvals and obligations.",
+      "skill_ids": [
+        "SK-C02-01",
+        "SK-C02-02",
+        "SK-C02-03",
+        "SK-C02-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "C03",
+      "version": "1.0.0",
+      "name": "Account and customer success",
+      "domain_reference": "Onboarding, adoption, service review, satisfaction, renewal, escalation and value realization.",
+      "skill_ids": [
+        "SK-C03-01",
+        "SK-C03-02",
+        "SK-C03-03",
+        "SK-C03-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "C04",
+      "version": "1.0.0",
+      "name": "Managed and professional services",
+      "domain_reference": "Service design, SOW, authorization, delivery, evidence, acceptance, SLA, margin and independence.",
+      "skill_ids": [
+        "SK-C04-01",
+        "SK-C04-02",
+        "SK-C04-03",
+        "SK-C04-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "C05",
+      "version": "1.0.0",
+      "name": "Marketing, partnerships, and ecosystem",
+      "domain_reference": "Positioning, content, campaigns, partner due diligence, marketplace, brand and regulated claims.",
+      "skill_ids": [
+        "SK-C05-01",
+        "SK-C05-02",
+        "SK-C05-03",
+        "SK-C05-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "T01",
+      "version": "1.0.0",
+      "name": "Tenancy, identity, and entitlement platform",
+      "domain_reference": "Tenant lifecycle, federation, RBAC/ABAC, isolation, entitlements, keys and support access.",
+      "skill_ids": [
+        "SK-T01-01",
+        "SK-T01-02",
+        "SK-T01-03",
+        "SK-T01-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "T02",
+      "version": "1.0.0",
+      "name": "Capability registry and projections",
+      "domain_reference": "Canonical schemas, catalog, dependencies, overlays, packaging, Codex/Claude/Gemini/Paperclip projection.",
+      "skill_ids": [
+        "SK-T02-01",
+        "SK-T02-02",
+        "SK-T02-03",
+        "SK-T02-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "T03",
+      "version": "1.0.0",
+      "name": "MCP, tools, plugins, webhooks, and adapters",
+      "domain_reference": "Contracts, discovery, auth, policy, schemas, sandbox, lifecycle, compatibility and observability.",
+      "skill_ids": [
+        "SK-T03-01",
+        "SK-T03-02",
+        "SK-T03-03",
+        "SK-T03-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "T04",
+      "version": "1.0.0",
+      "name": "Policy and workflow platform",
+      "domain_reference": "Policy decisions/enforcement, durable states, approvals, retries, timers, compensation and escalation.",
+      "skill_ids": [
+        "SK-T04-01",
+        "SK-T04-02",
+        "SK-T04-03",
+        "SK-T04-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "T05",
+      "version": "1.0.0",
+      "name": "Evidence, evaluation, and release integrity",
+      "domain_reference": "Lineage, hashes, graders, baselines, findings, independent review, release manifests and verification.",
+      "skill_ids": [
+        "SK-T05-01",
+        "SK-T05-02",
+        "SK-T05-03",
+        "SK-T05-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    },
+    {
+      "id": "T06",
+      "version": "1.0.0",
+      "name": "Model gateway and routing",
+      "domain_reference": "Provider/model registry, routing, privacy, data residency, fallback, usage, cost and conformance.",
+      "skill_ids": [
+        "SK-T06-01",
+        "SK-T06-02",
+        "SK-T06-03",
+        "SK-T06-04"
+      ],
+      "scope_note": "Outcome contracts cover recurring domain jobs. Further decomposition is mandatory when evaluation reveals multiple independent outcomes; this count is not a completeness target."
+    }
+  ]
+}
